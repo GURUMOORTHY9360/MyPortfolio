@@ -1,0 +1,183 @@
+<html>
+    <head>
+        <title>persnoal website</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <style>
+        #div1{
+           
+            margin-top: 120px;
+            margin-left: 150px;
+            width:700px;
+        }
+        con{
+            width:700px;
+            margin-top: 60px;
+            margin-right: 220px;
+            float:right;
+        }
+        #div1 h1{
+            font-size:38px;
+        }
+        #nav{
+            height:200px;
+            width:100%;
+            margin-top: 80px;
+            margin-left: 0px;
+            background-color: white;
+        }
+        #about{
+            font-size:38px;
+            margin-left: 250px;
+        }
+        #icon{
+            height:30px;
+            width:30px; 
+            margin-left: 20px; 
+        }
+        p{
+            font-size: 30px;
+            
+            color:ghostwhite;
+        }
+        #p{
+            font-size: 30px;
+            margin-left: 60px; 
+        }
+        .menu li{
+            font-size: 25px;
+            padding:20px; 
+            display:inline-block;  
+        }
+        .menu{
+            margin-left: 700px;
+        }
+        .menu a{
+            color:white;
+            text-decoration: none;  
+        }
+        a:hover{
+            color:fuchsia;
+        }
+        h1{
+            color:cyan;
+            font-size: 38px;
+        }
+        h2{
+            color:fuchsia;
+        }
+        #abo{
+            float:right;
+            margin-top: -290px;
+            border-radius: 90px;
+            margin-right: 220px;
+        }
+        #abou{
+            margin-top: 95px;
+            margin-left: 150px;
+            border-radius: 90px;
+        }
+        #foo{
+            height:70px;
+            width:auto;
+            margin-left: 0px;
+            background-color: black;
+            margin-bottom:0px;
+        }
+        #foo h3{
+            color:white;
+            text-align: center;
+        }
+        #scroll{
+            height:50px;
+            width:50px;
+            position:fixed;
+            bottom:80px;
+            right:650px;
+            animation:mover 2s linear infinite;
+            transition:1s;
+        }
+
+@keyframes mover{
+50%{
+      transform:translateY(-20%)
+}
+}
+        
+    </style>
+    <body>
+        <div  class="menu">
+            <ul>
+               <li><a  href="#">Home</a></li> 
+                <li><a  href="#div1">Skills</a></li>
+                <li><a  href="#about">Contact</a></li>
+            </ul>
+        </div>
+        <div id="div" class="div">
+        <center><br><br><br><br><br><br>
+            <h1 id="h1">Hello I'm Gurumoorthy R</h1>
+            <h1 id="h">Web Developer</h1>
+            <h2>I Love Web Design</h2>
+        </center>
+       </div>
+       <img src="D:\html files\guru\DocScanner Dec 16, 2022 9-14 PM.jpg">
+       <div id="marquee">
+       <marquee><h1>Welcome To My Website</h1></marquee>
+      </div> 
+       <div id="div1">
+        <center>
+        <h1>About Me</h1>
+        <h1>********</h1>
+        <p id="p">Blends detailed knowledge of programming aspects with interpersonal , communicative nature . Solid comprehension of problematic SEO , marketing and security obstacles .</p>
+        </center>   
+    </div>
+    <img id="abo"src="D:\html files\guru\about.jpeg">
+    <br><br><br>
+    <img id="abou"src="D:\html files\guru\skill.jpeg">
+        <con>
+       
+            <h1 id="about">My Skills</h1>
+                       <h1 id="about">*********</h1>
+            <p>I am having an intrest of programming 
+                and coding since I am 10 years old.
+                I started this an skill but now it means
+                 a lot to me.</p>
+        </con>         
+                 <br> <br>
+        <nav id="nav"> 
+            <center>            
+                 <h1>Contact Us</h1>
+                 <h1>**********</h1><br>
+            <a href="mailto:rkgurumoorthy1@gmail.com"><img  id="icon"src="D:\html files\guru\icons3.png"></a>
+            <a href=""><img id="icon"src="D:\html files\guru\icons4.png"></a>
+            <a href=""><img id="icon"src="D:\html files\guru\icons5.png"></a>
+            <a href=""><img id="icon"src="D:\html files\guru\whats.png"></a>
+        </center>
+       </nav>
+       <br><br><br><br>
+       <div id="scr">
+      <img id="scroll"src="D:\html files\guru\MyPortfolio\scroll-up.png" onclick="topFunction()">
+       </div>
+       <nav id="foo">
+        <center>
+            <h3>&copy;gurumoorthy</h3>
+        </center>
+    </nav>
+       <script>
+         window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("scroll").style.display = "block";
+    } else {
+        document.getElementById("scroll").style.display = "none";
+    }
+}
+
+function topFunction() {
+        window.scrollTo({top:0, behavior: 'smooth'});
+     }
+       
+        </script>
+    </body>
+</html>
